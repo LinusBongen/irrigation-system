@@ -20,8 +20,6 @@ void loop() {
   Serial.print(percentSoilMoist);
   Serial.println(" %");
 
-  percentSoilMoist = 40;        // clear this line 
-
   if(percentSoilMoist < 30) {
     digitalWrite(relayPin, HIGH);
     delay(1*1000); 
